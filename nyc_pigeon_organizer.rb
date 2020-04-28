@@ -15,8 +15,9 @@ def nyc_pigeon_organizer(data)
      :gender => [] 
        
      }
+     
      if data[:color][key].include? (x)
-       pigeons[x][:color] = pigeons[x][:color].push(key.to_s)
+        pigeons[x][:color].push(key.to_s)
      end
     # if data[:lives][key].include? (x)
       # pigeons[x][:lives].push(key)
