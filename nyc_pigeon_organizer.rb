@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
      :gender => [] 
        
      }
-     data[:color].each do |key|
+     data[:color].each do |key, value|
      if data[:color][key].include? (x)
         pigeons[x][:color].push(key.to_s)
      end
