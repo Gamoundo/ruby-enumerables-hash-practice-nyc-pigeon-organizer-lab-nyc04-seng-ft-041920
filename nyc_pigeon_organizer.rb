@@ -26,9 +26,9 @@ def nyc_pigeon_organizer(data)
      end
    end
     if  females.include? (x)  
-      pigeons[x][:gender] = "female" 
+      pigeons[x][:gender].push("female") 
     else  
-      pigeons[x][:gender] = "male"
+      pigeons[x][:gender].push("male")
     end  
 end
 
