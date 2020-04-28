@@ -20,14 +20,15 @@ def nyc_pigeon_organizer(data)
         pigeons[x][:color].push(key.to_s)
      end
    end
-    # if data[:lives][key].include? (x)
-      # pigeons[x][:lives].push(key)
-    # end
-    # if  females.include? (x)  
-      # pigeons[x][:gender] = "female" 
-    # else  
-      # pigeons[x][:gender] = "male"
-    # end  
+     data[:lives].each do |key, value|
+     if data[:lives][key].include? (x)
+       pigeons[x][:lives].push(key)
+     end
+    if  females.include? (x)  
+      pigeons[x][:gender] = "female" 
+    else  
+      pigeons[x][:gender] = "male"
+    end  
 end
 
 return pigeons
