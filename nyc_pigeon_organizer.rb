@@ -24,6 +24,7 @@ def nyc_pigeon_organizer(data)
      if data[:lives][key].include? (x)
        pigeons[x][:lives].push(key)
      end
+   end
     if  females.include? (x)  
       pigeons[x][:gender] = "female" 
     else  
